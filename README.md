@@ -13,7 +13,7 @@ In this set of practice problems, you will practice using the following:
 - Strings
 - Github
 
-The skeleton code for these problems is at the following link: https://github.com/USF-CS514-Fall20/practice (see Java classes inside src/main). See instructions below on getting started.
+The skeleton code for these problems is at the following link: https://github.com/chbrooks/CS514practice (see Java classes inside src/main). See instructions below on getting started.
 
 ### Overview
 
