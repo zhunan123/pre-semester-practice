@@ -9,7 +9,13 @@ public class MathHelper {
      */
     public static int arithmeticSeries(int n) {
         //TODO: Replace with your code.
-        return 0;
+        int i = 1;
+        int sum = 0;
+        while (i <= 10) {
+            sum += i;
+            i++;
+        }
+        return sum;
     }
 
 
@@ -24,11 +30,14 @@ public class MathHelper {
      */
     public static boolean validTriangle(int a, int b, int c) {
         //TODO: Replace with your code.
+        if ( a + b > c && a + c > b && b + c > a){
+            return true;
+        }
         return false;
     }
 
     public static void main(String[] args) {
         System.out.println(MathHelper.arithmeticSeries(10));
-        System.out.println(MathHelper.validTriangle(3, 6, 8));
+        System.out.println(MathHelper.validTriangle(1, 1, 3));
     }
 }

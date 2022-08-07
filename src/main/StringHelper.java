@@ -11,7 +11,15 @@ public class StringHelper {
      */
     public static int countVowels(String message) {
         //TODO: Replace with your code.
-        return 0;
+        int count = 0;
+        for(int i=0;i< message.length(); i++){
+            char ch = message.charAt(i);
+            if(ch == 'a'|| ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+                count++;
+            }
+        }
+
+        return count;
     }
 
     /**
@@ -32,7 +40,18 @@ public class StringHelper {
      */
     public static String encrypt(String message, int shift) {
         //TODO: Replace with your code.
-        return null;
+        //String "" is made of char'', so you can add char'' into String"", "'h''e''l''l''o'"
+        String result = "";
+        for(int i=0;i<message.length();i++){
+            char c = (char)(message.charAt(i) + shift);
+            System.out.println(message.charAt(i)+ shift);
+            if(c > 'z'){
+                return null;
+            } else {
+                result += (char)(message.charAt(i) + shift);
+            }
+        }
+        return result;
     }
 
     /** Main method: runs methods of class StringHelper */
